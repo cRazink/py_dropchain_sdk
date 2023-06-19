@@ -31,6 +31,15 @@ response = dropchain_sdk.atomic_swap_dropnet(asset1_amount_int, asset1_id, asset
 response = dropchain_sdk.redeem_session_token(session1_token)
 response = dropchain_sdk.freeze_asset_testnet(asset1_id, receiver1_uid, session1_token, user1_uid)
 response = dropchain_sdk.freeze_asset_dropnet(asset1_id, receiver1_uid, session1_token, user1_uid)
+response = dropchain_sdk.unfreeze_asset_testnet(asset1_id, receiver1_uid, session1_token, user1_uid)
+response = dropchain_sdk.unfreeze_asset_dropnet(asset1_id, receiver1_uid, session1_token, user1_uid)
+response = dropchain_sdk.clawback_asset_testnet(asset1_amount_int, asset1_id, receiver1_uid, transaction1_note, session1_token, clawback_uid, user1_uid)
+response = dropchain_sdk.clawback_asset_dropnet(asset1_amount_int, asset1_id, receiver1_uid, transaction1_note, session1_token, clawback_uid, user1_uid)
+response = dropchain_sdk.create_listing(product_title, product_description, product_media_url, product_usd_price, sold_asset_ids, quantity_to_send_after_purchase, session1_token, fulfillment_uid, user1_uid)
+response = dropchain_sdk.asset_indexer_lookup_testnet(receiver1_uid, session1_token, user1_uid)
+response = dropchain_sdk.asset_indexer_lookup_dropnet(receiver1_uid, session1_token, user1_uid)
+response = dropchain_sdk.update_asset_metadata_testnet(asset1_id, metadata_hash, session1_token, user1_uid)
+response = dropchain_sdk.update_asset_metadata_dropnet(asset1_id, metadata_hash, session1_token, user1_uid)
 
 # if you are still testing dropchain and have not yet started using the DropChain SSO, you do not need to include the session1_token parameter. For this parameter, simply include None within the session1_token field for your calls in order to use the SDK 
 # [ End Example Usage Snippets ]
