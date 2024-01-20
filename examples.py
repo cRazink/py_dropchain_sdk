@@ -40,6 +40,10 @@ response = dropchain_sdk.asset_indexer_lookup_testnet(receiver1_uid, session1_to
 response = dropchain_sdk.asset_indexer_lookup_dropnet(receiver1_uid, session1_token, user1_uid)
 response = dropchain_sdk.update_asset_metadata_testnet(asset1_id, metadata_hash, session1_token, user1_uid)
 response = dropchain_sdk.update_asset_metadata_dropnet(asset1_id, metadata_hash, session1_token, user1_uid)
+response = dropchain_sdk.delete_asset_testnet(asset1_id, session1_token, user1_uid)
+response = dropchain_sdk.delete_asset_dropnet(asset1_id, session1_token, user1_uid)
+response = dropchain_sdk.asset_airdrop_testnet(asset1_amount_int, asset1_id, receiver1_uid, session1_token, user1_uid)
+response = dropchain_sdk.asset_airdrop_dropnet(asset1_amount_int, asset1_id, receiver1_uid, session1_token, user1_uid)
 
 # if you are still testing dropchain and have not yet started using the DropChain SSO, you do not need to include the session1_token parameter. For this parameter, simply include None within the session1_token field for your calls in order to use the SDK 
 # [ End Example Usage Snippets ]
