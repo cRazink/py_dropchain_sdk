@@ -1,6 +1,6 @@
 from dropchain_sdk import DropChainSDK
 
-dropchain_sdk = DropChainSDK("<Your RapidAPI Key>", "<Your App ID>")
+dropchain_sdk = DropChainSDK("<Your API Key>", "<Your App ID>")
 
 # [ Start Example Usage Snippets ]
 # for each of the example snippets below, you must replace the parameters with your own test credentials on your dropchain.network developer dashboard
